@@ -1,0 +1,41 @@
+.notFound{
+    height: 100vh;
+    width: 100%;
+    background: var(--main);
+    display: flex;
+    justify-content: center;
+    align-items: center;        
+}
+
+.notFoundContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.notFoundContainer img{
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+}
+
+
+.goHome{
+    background-color: white;
+    color:  black !important;
+    padding: 10px 13px;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 10px;
+    font-size: 23px;
+}
+
+.goHome:hover{
+    color: white !important;
+    background-color: var(--rose);
+}

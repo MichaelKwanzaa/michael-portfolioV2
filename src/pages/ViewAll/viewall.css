@@ -1,0 +1,91 @@
+.viewAllProjects{
+    background-color: black;
+    height: 145vh;
+    padding: 0;
+    margin: 0;
+}
+
+.viewAllProjectsContainer{
+    padding: 30px;
+}
+
+.viewAllProjectsBottom{
+    width: 100%;
+}
+
+.viewAllProjectsImageContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.viewAllProjectsImage img{
+    width: 420px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.projectImageView{
+    position: relative;
+}
+
+.viewAllProjectsImage h3{
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    cursor: pointer;
+    background-color: var(--main);
+    padding: 5px;
+}
+
+.viewAllProjectsImage img:hover{
+    filter: brightness(30%);
+}
+
+.viewProjectContainer{
+    display: none;
+}
+
+.projectImageView:hover .viewProjectContainer{
+    display: block;
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .viewAllProjects{
+        width: 100%;
+    }
+
+    .viewAllProjectsImageContainer{
+        width: 100%;
+        flex-wrap: wrap ;
+        justify-content: center;
+    }
+
+
+    .viewAllProjectsImage img{
+        width: 550px;
+    }
+
+}
+
+
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2) { 
+  .viewAllProjects{
+      width: 100%;
+  }
+
+  .viewAllProjectsImage img{
+      width: 380px;
+  }
+
+}

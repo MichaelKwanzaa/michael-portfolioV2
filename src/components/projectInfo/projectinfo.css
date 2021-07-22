@@ -1,0 +1,199 @@
+.projectInformation{
+    background-color: var(--sub);
+    height: 100vh;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.projectInformationContainer{
+    display: flex;
+}
+
+.projectInformationLeft{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.backArrowContainer{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 50px;
+    color: var(--white) !important;
+    font-size: 15px !important;
+    font-size: 600;
+}
+
+.backArrowContainer:hover{
+    color: var(--rose) !important;
+}
+
+.backArrow{
+    margin-right: 5px;
+}
+
+.projectInformationRight{
+    flex: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projectInformationRightContainer{
+    color: white;
+    width: 92%;
+    max-height: 80%;
+    overflow-y: scroll;
+}
+
+.projectInformationRightInfo{
+    max-width: 95%;
+    margin-bottom: 20px;
+
+}
+
+
+.projectInformationRightInfo h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.projectInformationRightInfo h3{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(228, 228, 228);
+    font-size: 15px;
+    margin-top: 5px;
+    font-weight: 300;
+}
+
+.projectInformationRightInfo.rightUrl a{
+    text-decoration: none;
+}
+
+
+.projectInformationRightInfo.rightUrl h3{
+    color: var(--rose) !important;
+}
+.projectInformationRightInfo.rightUrl h3:hover{
+    color: var(--main) !important;
+}
+
+
+.projectInformationRightInfo.rightFunc li{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projectInformationRightInfo.rightStatus{
+    padding-bottom: 50px;
+}
+
+.slider{
+    position: relative;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 80px;
+}
+
+.photoInfoPhoto{
+    width: 700px;
+    height: 400px;
+    border-radius: 4px;
+    object-fit: scale-down;
+    image-rendering: high-quality;
+    user-select: none;
+}
+
+.rightArrow{
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.leftArrow{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.leftArrow.none{
+    display: none;
+}
+
+.slide{
+    opacity: 0;
+    transition: 1s ease cubic-bezier(0.075, 0.82, 0.175, 1);
+}
+
+.slide.active{
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.09);
+    user-select: none;
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .projectInformation{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .projectInformationContainer{
+        flex-direction: column;
+    }
+
+    .projectInformationRightContainer{
+        overflow-y: hidden;
+    }
+
+    .photoInfoPhoto{
+        width: 600px;
+        object-fit: contain;
+    }
+
+  }
+
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2) { 
+  
+    .projectInformationContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projectInformation{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .projectInformationRightContainer{
+        overflow-y: hidden;
+    }
+
+    .photoInfoPhoto{
+        width: 360px;
+        object-fit: contain;
+    }
+}

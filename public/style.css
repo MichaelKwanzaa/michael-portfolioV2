@@ -1,0 +1,32 @@
+:root{
+    --main: #292929 ;
+    --sub: #616161;
+    --third: #01B0D3;
+    --white: #FFFFFF;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    color: var(--main);
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #888;
+  }
