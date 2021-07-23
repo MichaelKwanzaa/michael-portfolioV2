@@ -161,7 +161,7 @@ export const portfolioData = {
 			I know better than anyone how my knowledge of Javascript, algorithms, node packages, Typescript, CSS, styled-components, etc. 
 			have all improved as a result, I am very proud of this project, and ready for the learning and life opportunities
 			waiting ahead.`,
-			projectUrl: "",
+			projectUrl: "https://github.com/MichaelKwanzaa/michael-portfolioV2",
 			photoUrls: ["/portfolioMichaelV2/0.jpg", "/portfolioMichaelV2/1.jpg", "/portfolioMichaelV2/2.jpg", 
 			"/portfolioMichaelV2/3.jpg", "/portfolioMichaelV2/4.jpg", "/portfolioMichaelV2/5.jpg", "/portfolioMichaelV2/6.jpg", ],
 			status: true,
@@ -178,6 +178,19 @@ export const portfolioData = {
 			projectUrl: "https://github.com/MichaelKwanzaa/change-and-save-color",
 			photoUrls: ["/colorChange/0.jpg", "/colorChange/1.jpg", "/colorChange/2.jpg", "/colorChange/3.jpg"],
 			status: true,
+		},
+		{
+			id: 12,
+			projectName: "Model Portfolio",
+			about: "A simple portfolio to display some photos",
+			tools: ["HTML5", "CSS3", "JS", "GSAP"],
+			functionality: ["Horizontal Scroll of pages",
+			"Contact form"],
+			comment: `One of my earlier projects without react, where i first got introduced to the power of GSAP
+			but with just Javascript`,
+			projectUrl: "https://cartura.netlify.app/",
+			photoUrls: ["/model/1.jpg", "/model/0.jpg", "/model/2.jpg", "/model/3.jpg", "/model/4.jpg", "/model/5.jpg"],
+			status: true
 		}
 	]
 }
